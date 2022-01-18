@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cirkel: {fileID: 8171360780290740903, guid: f4ce85b8d79f19d4d89ca6127e00aab0, type: 3}
+  Cirkel2: {fileID: 3122321032062078393, guid: 67b2aacb16994374caf001da28d26393, type: 3}
 --- !u!4 &1890232640
 Transform:
   m_ObjectHideFlags: 0
