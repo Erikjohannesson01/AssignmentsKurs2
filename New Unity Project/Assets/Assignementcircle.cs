@@ -19,7 +19,7 @@ public class Assignementcircle : MonoBehaviour
         turning += Time.time;
 
         float x = Mathf.Cos(turning);
-        float y = Mathf.Sign(turning);
+        float y = Mathf.Sin(turning);
 
         transform.position = new Vector2(x, y);
     }

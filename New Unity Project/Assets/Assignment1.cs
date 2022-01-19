@@ -10,15 +10,21 @@ public class Assignment1 : MonoBehaviour
 
 
     public float cc;
+    public float holdcc;
 
     void Start()
     {
         Spawn();
+        circle();
+        holdcc = cc;
     }
 
     private void Update()
     {
-        spawnchange();
+        if (holdcc != cc)
+        {
+            circle();
+        }
     }
 
 
@@ -33,13 +39,14 @@ public class Assignment1 : MonoBehaviour
 
        
     }
-    void spawnchange()
+
+    private void circle()
     {
         for (float x = 0; x < Mathf.PI * 2; x += 0.1f)
         {
 
             Instantiate(Cirkel3, new Vector2(Mathf.Cos(x) * cc, Mathf.Sin(x) * cc), Quaternion.identity);
         }
-
+        
     }
 }
